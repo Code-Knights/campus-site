@@ -54,6 +54,7 @@
     "github": {
       "release": true,
       "releaseName": "v${version}",
+      "releaseNotes": "git fetch --all && git log --pretty=format:\"* %s (%h)\" `git describe --tags --abbrev=0`..HEAD",
       "autoGenerate": true,
       "web": true
     },
