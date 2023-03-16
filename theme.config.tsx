@@ -8,7 +8,7 @@ const config: DocsThemeConfig = {
     key: "0.1.0-release",
     text: (
       <a href="http://localhost:3000" target="_blank">
-        🎉 Campus Learn 0.1.0 is released. Read more →
+        🎉 Campus Learn 0.2.0 is released. Read more →
       </a>
     ),
   },
