@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/Code-Knights/campus-site#readme",
   "dependencies": {
-    "@commitlint/cz-commitlint": "^17.4.4",
     "dotenv-cli": "^7.1.0",
     "next": "^13.2.*",
     "nextra": "latest",
@@ -31,8 +30,12 @@
     "swr": "^2.1.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/cz-commitlint": "^17.4.4",
     "@release-it/conventional-changelog": "^5.1.1",
     "@types/node": "18.11.10",
+    "commitizen": "^4.3.0",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "release-it": "^15.8.0",
