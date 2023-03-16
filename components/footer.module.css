@@ -1,0 +1,41 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.poweredBy,
+.builtBy {
+  font-size: 14px;
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.poweredBy a,
+.builtBy a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.poweredBy a:hover,
+.builtBy a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .poweredBy,
+  .builtBy {
+    flex-basis: auto;
+    text-align: left;
+    margin-top: 0;
+  }
+}

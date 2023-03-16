@@ -1,0 +1,22 @@
+{
+  "index": "Introduction",
+  "rule": "Rules ⚖️",
+  "another": "Another Page",
+  "advanced": "Advanced 🚧",
+  "materi": "Materi ",
+  "tugas": "Tugas ",
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://twitter.com/shuding_",
+    "newWindow": true
+  }
+}

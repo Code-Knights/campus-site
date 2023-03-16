@@ -1,0 +1,104 @@
+{
+  "name": "campus-site",
+  "version": "0.0.0",
+  "description": "campus-site",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "release": "release-it",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-Knights/campus-site.git"
+  },
+  "author": "miyucutee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Code-Knights/campus-site/issues"
+  },
+  "homepage": "https://github.com/Code-Knights/campus-site#readme",
+  "dependencies": {
+    "next": "^13.2.*",
+    "nextra": "latest",
+    "nextra-theme-docs": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swr": "^2.1.0"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^5.1.1",
+    "@types/node": "18.11.10",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "release-it": "^15.8.0",
+    "typescript": "^4.9.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "release-it": {
+    "git": {
+      "changelog": "git fetch --all && git log --pretty=format:\"* %s (%h)\" `git describe --tags --abbrev=0`..HEAD",
+      "commitMessage": "v${version}"
+    },
+    "github": {
+      "release": true,
+      "releaseName": "v${version}",
+      "web": true,
+      "autoGenerate": true
+    },
+    "npm": {
+      "publish": false
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "preset": {
+          "name": "conventionalcommits",
+          "types": [
+            {
+              "type": "`feat`",
+              "section": "✨ New features"
+            },
+            {
+              "type": "`fix`",
+              "section": "🐞 Bug by and Update"
+            },
+            {
+              "type": "`chore`",
+              "section": "🎉 Done Task"
+            },
+            {
+              "type": "`docs`",
+              "section": "📝 Add Task"
+            },
+            {
+              "type": "style",
+              "section": "🎉 Tugas Selesai"
+            },
+            {
+              "type": "refactor",
+              "section": "🔄 A code change that neither fixes a bug nor adds a feature"
+            },
+            {
+              "type": "perf",
+              "section": "A code change that improves performance"
+            },
+            {
+              "type": "test",
+              "hidden": true
+            }
+          ],
+          "releaseCount": 1,
+          "outputUnreleased": true,
+          "whoCanContribute": "CONTRIBUTORS.md"
+        },
+        "contributors": true
+      }
+    }
+  }
+}
