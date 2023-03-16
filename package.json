@@ -1,14 +1,18 @@
 {
   "name": "campus-site",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "campus-site",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "release-2": "dotenv release-it --ci",
-    "release": "set /p GITHUB_TOKEN=Enter your GitHub token: && set \"GITHUB_TOKEN=%GITHUB_TOKEN%\" && release-it --"
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major",
+    "publish:": "pnpm commit && pnpm release:patch && git push --follow-tags origin main",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -27,6 +31,7 @@
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "standard-version": "^9.5.0",
     "swr": "^2.1.0"
   },
   "devDependencies": {
@@ -39,11 +44,12 @@
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "release-it": "^15.8.0",
-    "typescript": "^4.9.3"
+    "typescript": "^4.9.3",
+    "husky": "^8.0.0"
   },
   "config": {
     "commitizen": {
-      "path": "@commitlint/cz-commitlint"
+      "path": "cz-conventional-changelog"
     }
   },
   "release-it": {

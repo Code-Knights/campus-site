@@ -1,0 +1,18 @@
+{
+  "types": [
+    { "type": "feat", "section": "✨ New features" },
+    { "type": "fix", "section": "🐞 Bug by and Update" },
+    { "type": "chore", "section": "🎉 Done Task" },
+    { "type": "docs", "section": "📝 Add Task" },
+    { "type": "style", "section": "💅 Other Changes" },
+    {
+      "type": "refactor",
+      "section": "🔄 A code change that neither fixes a bug nor adds a feature"
+    },
+    { "type": "perf", "hidden": true },
+    { "type": "test", "hidden": true }
+  ],
+  "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
+  "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
+  "releaseCommitMessageFormat": "v{{currentTag}}"
+}
