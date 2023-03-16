@@ -1,23 +1,22 @@
-# Nextra Docs Template 
+# Campus Learn
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+## Description
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
-
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
-
-## Quick Start
-
-Click the button to clone this repository and deploy it on Vercel:
-
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+Campus Learn adalah  aplikasi web yang dibuat untuk memudahkan mahasiswa dalam mengakses informasi mengenai perkuliahan, tugas, dan lain-lain. Aplikasi ini dibuat dengan menggunakan framework Next.js dan dibangun dengan Nextra
 
 ## Local Development
 
-First, run `pnpm i` to install the dependencies.
+1. Clone repository ini
+2. Install dependencies dengan `npm install`
+3. Jalankan server dengan `npm run dev`
+4. Buka `http://localhost:3000` di browser
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+## Deployment
+
+1. Install Vercel CLI dengan `npm install -g vercel`
+2. Login ke Vercel CLI dengan `vercel login`
+3. Deploy dengan `vercel`
 
 ## License
 
-This project is licensed under the MIT License.
+MIT
