@@ -48,13 +48,11 @@
   },
   "release-it": {
     "git": {
-      "changelog": "git fetch --all && git log --pretty=format:\"* %s (%h)\" `git describe --tags --abbrev=0`..HEAD",
       "commitMessage": "v${version}"
     },
     "github": {
       "release": true,
       "releaseName": "v${version}",
-      "releaseNotes": "git fetch --all && git log --pretty=format:\"* %s (%h)\" `git describe --tags --abbrev=0`..HEAD",
       "autoGenerate": true,
       "web": true
     },
