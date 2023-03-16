@@ -1,13 +1,14 @@
 {
   "name": "campus-site",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "campus-site",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "release": "release-it",
-    "lint": "next lint"
+    "lint": "next lint",
+    "release-2": "dotenv release-it --ci",
+    "release": "set /p GITHUB_TOKEN=Enter your GitHub token: && set \"GITHUB_TOKEN=%GITHUB_TOKEN%\" && release-it --"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/Code-Knights/campus-site#readme",
   "dependencies": {
+    "dotenv-cli": "^7.1.0",
     "next": "^13.2.*",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
@@ -48,8 +50,8 @@
     "github": {
       "release": true,
       "releaseName": "v${version}",
-      "web": true,
-      "autoGenerate": true
+      "autoGenerate": true,
+      "web": true
     },
     "npm": {
       "publish": false
