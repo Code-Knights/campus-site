@@ -18,10 +18,9 @@ const Gallery = (props:GalleryProps) => {
   return (
     <div className={styles.container}>
       {data?.slice(props.start, props.end).map((image: string, index: number) => (
-        <figure className={styles.figure}>
+        <figure key={index} className={styles.figure}>
           <img
             className={cn(styles.fit, styles.img)}
-            key={index}
             src={image}
             alt={image}
           />
