@@ -7,7 +7,7 @@ const config: DocsThemeConfig = {
   banner: {
     key: "0.1.0-release",
     text: (
-      <a href="http://localhost:3000" target="_blank">
+      <a href="https://github.com/Code-Knights/campus-site" target="_blank">
         🎉 Campus Learn 0.2.0 is released. Read more →
       </a>
     ),
