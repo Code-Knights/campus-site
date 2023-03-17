@@ -38,6 +38,7 @@ const config: DocsThemeConfig = {
     return (
       <>
         <link rel="icon" type="image/png" href="/logo/logo.png" />
+        <meta name="google-site-verification" content="fxuMx0DQopAK0K-p_yBEgzZCNax3vqyON-bv5zTg0j0" />
         <meta property="og:url" content={url} />
         {/* <meta
           property="og:description"
