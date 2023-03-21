@@ -5,10 +5,10 @@ import GitTimesTamp from "./components/GitTimesTamp";
 
 const config: DocsThemeConfig = {
   banner: {
-    key: "0.1.0-release",
+    key: "0.3.0-release",
     text: (
       <a href="https://github.com/Code-Knights/campus-site" target="_blank">
-        🎉 Campus Learn 0.2.0 is released. Read more →
+        🎉 Campus Learn 0.3.0 is released. Read more →
       </a>
     ),
   },
