@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/Code-Knights/campus-site/compare/v0.3.0...v0.3.1) (2023-03-22)
+
+
+### 🐞 Bug by and Update
+
+* **deploy:** fix page ([1ee4960](https://github.com/Code-Knights/campus-site/commit/1ee4960edd134df56f84fd898469af791ab7bcad))
+* **imk:** repair struktur materi ([9cca842](https://github.com/Code-Knights/campus-site/commit/9cca842250db97360147ad5256a4804b35662802))
+* **kewirausaha:** repair struktur materi ([9fc37e9](https://github.com/Code-Knights/campus-site/commit/9fc37e97597797564f0184092e72aeebd361c234))
+
 ## [0.3.0](https://github.com/Code-Knights/campus-site/compare/v0.2.0...v0.3.0) (2023-03-21)
 
 
